@@ -5,13 +5,13 @@
 <Header/>
 <main class="flex-1 pt-[74px]">
 <Hero id="home"/>
-<How id="how-it-works"/>
+<How id="how"/>
 <App id="app"/>
 <Trust id="security"/>
 <Testi id="testimonials"/>
 <Figures id="figures"/>
 <QA id="faq"/>
-<Footer/>
+<Footer id ="footer" />
 </main>
 
 </template>

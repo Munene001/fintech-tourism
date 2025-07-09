@@ -2,7 +2,7 @@
   <div>
     <!-- Desktop Navigation -->
     <div
-      class="h-[74px] flex-row md:flex hidden w-full bg-[#202654] font-[Sans-serif] fixed border-b border-gray-600"
+      class="h-[90px] z-50 flex-row md:flex hidden w-full bg-[#202654] font-[Sans-serif] fixed border-b border-gray-600"
     >
       <div class="flex w-[25%] items-center justify-center">logo</div>
       <div class="w-[50%] flex items-center justify-around bg-transparent">
@@ -14,7 +14,7 @@
         </button>
 
         <button
-          @click="scrollTo('how-it-works')"
+          @click="scrollTo('how')"
           class="text-[13px] leading-[14px] font-semibold no-underline text-white hover:underline"
         >
           HOW IT WORKS
@@ -28,21 +28,21 @@
         </button>
 
         <button
-          @click="scrollTo('testimonials')"
-          class="text-[13px] leading-[14px] font-semibold no-underline text-white hover:underline"
-        >
-          TESTIMONIALS
-        </button>
-
-        <button
           @click="scrollTo('faq')"
           class="text-[13px] leading-[14px] font-semibold no-underline text-white hover:underline"
         >
           FAQs
         </button>
+
+        <button
+          @click="scrollTo('footer')"
+          class="text-[13px] leading-[14px] font-semibold no-underline text-white hover:underline"
+        >
+          REACH US
+        </button>
       </div>
 
-      <div class="w-[25%] flex items-center  gap-[20px] justify-center">
+      <div class="w-[25%] flex items-center gap-[20px] justify-center">
         <div class="text-white text-[13px]">info@example.com</div>
         <button
           @click="scrollTo('contact')"
@@ -59,7 +59,7 @@
 
     <!-- Mobile Navigation -->
     <div
-      class="flex flex-row max-w-[768px] md:hidden h-[80px] justify-between items-center px-4 box-border bg-[#202654] w-full text-white font-[edgaramond]"
+      class="flex flex-row max-w-[768px] md:hidden h-[80px] fixed border-b border-gray-300 z-50 justify-between items-center px-4 box-border bg-[#202654] w-full text-white font-[edgaramond]"
     >
       <div>logo</div>
       <button @click="togglePopup">
@@ -74,13 +74,13 @@
     >
       <div class="flex flex-col gap-[3px] w-full">
         <button
-          @click="() => scrollTo('home')"
+          @click="() => scrollTo('home1')"
           class="flex h-[55px] text-[18px] leading-[18px] font-semibold no-underline border-b border-gray-400 items-center justify-start hover:text-[chocolate]"
         >
           HOME
         </button>
         <button
-          @click="() => scrollTo('how-it-works')"
+          @click="() => scrollTo('how')"
           class="flex h-[55px] text-[18px] leading-[18px] font-semibold no-underline border-b border-gray-400 items-center justify-start hover:text-[chocolate]"
         >
           HOW IT WORKS
@@ -108,10 +108,10 @@
         </button>
 
         <button
-          @click="() => scrollTo('contact')"
+          @click="() => scrollTo('footer')"
           class="flex h-[55px] text-[18px] leading-[18px] font-semibold no-underline border-b border-gray-400 items-center justify-start hover:text-[#FFD700]"
         >
-          GET STARTED
+          REACH US
         </button>
       </div>
       <button @click="togglePopup" class="absolute top-[60px] right-[30px]">
@@ -133,14 +133,28 @@ export default {
       this.isOpen = !this.isOpen;
     },
     scrollTo(id) {
-      const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
-      }
-      this.isOpen = false; // Close mobile menu after selection
+      this.isOpen = false; // Close mobile menu
+
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          // Calculate header height (90px desktop, 80px mobile)
+          const headerHeight = window.innerWidth >= 768 ? 90 : 80;
+
+          // Get element's position relative to viewport
+          const elementRect = element.getBoundingClientRect();
+
+          // Calculate scroll position accounting for fixed header
+          const scrollPosition =
+            window.scrollY + elementRect.top - headerHeight;
+
+          // Scroll to exact position
+          window.scrollTo({
+            top: scrollPosition,
+            behavior: "smooth",
+          });
+        }
+      }, 100); // Small delay to ensure menu closes first
     },
   },
 };
