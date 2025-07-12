@@ -2,7 +2,7 @@
     <div ref="overall" class="w-full font-[sans]">
       <div class="h-[590px] flex flex-col justify-evenly items-center md:flex-row md:h-[250px] bg-[#202654]">
         <div v-for="(stat, index) in stats" :key="index" class="text-center">
-          <div ref="numberElements" class="text-[40px] font-semibold leading-[40px] text-white">
+          <div ref="numberElements" class="text-[40px] font-medium leading-[40px] text-white">
             {{ animatedValues[index] || 0 }}
           </div>
           <div class="text-[20px] font-[500] leading-[30px] text-white">
