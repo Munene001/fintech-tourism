@@ -8,8 +8,9 @@
 <How id="how"/>
 <App id="app"/>
 <Trust id="security"/>
-<Testi id="testimonials"/>
 <Figures id="figures"/>
+<Testi id="testimonials"/>
+
 <QA id="faq"/>
 <Footer id ="footer" />
 </main>

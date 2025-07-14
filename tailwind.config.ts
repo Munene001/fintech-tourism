@@ -14,6 +14,7 @@ module.exports = {
         "glide-out": "glideOut 2s ease-out forwards",
         "title-in": "titleIn 2s ease-out  forwards",
         "mobile-glide-in": "mobileglideIn 2s ease-out forwards",
+       
       },
     },
     keyframes: {
@@ -39,6 +40,7 @@ module.exports = {
           opacity: 1,
         },
       },
+     
     },
   },
   plugins: [],

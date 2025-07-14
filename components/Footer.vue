@@ -4,7 +4,7 @@
         <div class="flex flex-col gap-[15px] md:flex-1">
         <div class="flex flex-row items-center gap-[10px] ">
             <img src = "/Qr.png" alt="logo" class="object-scale-down h-[50px] w-[50px]">
-             <div class="text-[20px] font-semibold leading-[24px]">Name of Company</div>
+             <div class="text-[20px] font-semibold leading-[24px]">Mpay-wallet</div>
               
         </div>
           <div class="text-[Sans serif]  text-[16px] leading-[26px] font-[300]">Skip the SIM card hassle. With our app, you pay like a local from the moment you land in Kenya. Simple, secure, and made for travelers like you.</div>
@@ -45,7 +45,7 @@
         
         
     </div>
-    <div class="h-[65px] bg-[#202654] text-white text-center flex items-center justify-center border-t border-gray-600"> @Copyright Name of company. All rights reserved</div>
+    <div class="h-[65px] bg-[#202654] text-white text-center flex items-center justify-center border-t border-gray-600"> @Copyright Mpay-wallet. All rights reserved</div>
 </template>
 <script setup>
 import Header from './Header.vue';

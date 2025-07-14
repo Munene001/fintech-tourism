@@ -2,9 +2,9 @@
   <div>
     <!-- Desktop Navigation -->
     <div
-      class="h-[90px] z-50 flex-row md:flex hidden w-full bg-[#202654] font-[Sans-serif] fixed border-b border-gray-600"
+      class="h-[90px] z-50 flex-row md:flex hidden w-full bg-[#202654] font-[Sans-serif] fixed shadow-lg shadow-b shadow-spread"
     >
-      <div class="flex w-[25%] items-center justify-center">logo</div>
+      <div class="flex w-[25%] items-center justify-center"><img src="/mpay.png" alt="mpay"/></div>
       <div class="w-[50%] flex items-center justify-around bg-transparent">
         <button
           @click="scrollTo('home')"
@@ -61,7 +61,7 @@
     <div
       class="flex flex-row max-w-[768px] md:hidden h-[80px] fixed border-b border-gray-300 z-50 justify-between items-center px-4 box-border bg-[#202654] w-full text-white font-[edgaramond]"
     >
-      <div>logo</div>
+      <div><img src="/mpay.png" /></div>
       <button @click="togglePopup">
         <Icon name="material-symbols:menu" class="text-[28px] text-white" />
       </button>

@@ -36,7 +36,7 @@
     <!-- Centered Image (Absolute Positioning) -->
 
     <img
-      src="/cre-1.webp"
+      src="/sampler7.png"
       class="md:absolute right-[30px] top-1/2 max-h-[80%] max-w-[90%] object-scale-down animate-glide-in box-border"
     />
 
@@ -68,7 +68,7 @@
         Register<Icon name="guidance:left-arrow" />
       </button>
       <img
-        src="/cre-1.webp"
+        src="/sampler7.png"
         class="flex max-h-[230px] max-w-[100%] object-scale-down box-border animate-mobile-glide-in"
       />
     </div>
