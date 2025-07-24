@@ -1,7 +1,7 @@
 <template>
     <div class="px-[20px] py-[40px] flex flex-col gap-[20px]">
         <div class=" flex flex-row items-center font-light text-[20px] text-[Sans-serif]"><span><Icon name="ci:house-02"/></span><span><Icon name="lsicon:right-filled"/></span>Frequently asked questions</div>
-        <div class = "flex flex-col md:grid md:grid-cols-2  gap-[20px] md:justify-between">
+        <div class = "flex flex-col md:grid md:grid-cols-2  gap-[20px] justify-center">
            
         <Q numeral = "1." Iconname = "mdi:about" question = " What is this service about?" explanation = " We provide tourists visiting Kenya with a convenient way to access and use M-Pesa without the need to register for a local SIM card. You can make payments, receive money, and enjoy local digital transactions securely from your own device."/>
         <Q numeral = "2." Iconname = "fa6-solid:cash-register" question = " How do I register or sign up?" explanation = "Simply download our app or access the web platform, sign up with your passport and travel details, and you’ll be set up with a virtual M-Pesa wallet linked to your foreign number or email."/>

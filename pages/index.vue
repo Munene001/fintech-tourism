@@ -1,0 +1,6 @@
+<template>
+   
+    <Hero/>
+    <How/>
+    
+</template>

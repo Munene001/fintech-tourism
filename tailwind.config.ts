@@ -9,6 +9,13 @@ module.exports = {
 
   theme: {
     extend: {
+      fontFamily:{
+        uno: ['Uno', 'sans-serif'],      // For Bahnschrift
+        dos: ['Dos', 'sans-serif'],      // For BRODAY-Regular
+        
+
+      },
+
       animation: {
         "glide-in": "glideIn 2s ease-out forwards",
         "glide-out": "glideOut 2s ease-out forwards",

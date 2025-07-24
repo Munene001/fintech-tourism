@@ -1,5 +1,5 @@
 <template>
-  <div class="flex md:flex-row flex-col bg-[#202654] items-center md:p-[10px] md:gap-[20px] py-[30px] px-[18px] gap-[40px] ">
+  <div class="flex md:flex-row flex-col bg-[#202654] items-center md:p-[10px] md:gap-[20px] py-[30px] px-[18px] gap-[40px] shadow-lg  shadow-spread rounded-lg ">
     <div class="flex-1">
       <img
         src="/samp5.png"

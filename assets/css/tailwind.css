@@ -1,3 +1,20 @@
+@font-face {
+    font-family: 'Uno';
+    src: url('/Bahnschrift.woff2') format('woff2');
+    
+  }
+  
+  @font-face {
+    font-family: 'Dos';
+    src: url('/BRODAY-Regular.woff2') format('woff2');
+   
+  }
+  @font-face {
+    font-family: 'Tres';
+    src: url('/Amsterdam Signature.ttf') format('truetype');
+  }
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+

@@ -1,9 +1,9 @@
 <template>
-    <div class="bg-[#202654]  flex flex-col text-white px-[20px] gap-[40px] py-[30px] md:py-[70px] md:items-center md:flex md:flex-row  md:pl-[20px]" id="footer"> 
+    <div class="bg-[#202654]  flex flex-col text-white px-[20px] gap-[40px] py-[30px] md:py-[70px] md:items-center md:flex md:flex-row  md:pl-[20px]  shadow-lg  shadow-spread rounded-t-lg" id="footer"> 
 
         <div class="flex flex-col gap-[15px] md:flex-1">
         <div class="flex flex-row items-center gap-[10px] ">
-            <img src = "/Qr.png" alt="logo" class="object-scale-down h-[50px] w-[50px]">
+            <img src = "/frame.png" alt="logo" class="object-scale-down h-[50px] w-[50px]">
              <div class="text-[20px] font-semibold leading-[24px]">Mpay-wallet</div>
               
         </div>
@@ -49,5 +49,5 @@
 </template>
 <script setup>
 import Header from './Header.vue';
-const scrollTo = Header.methods.scrollTo;
+
 </script>

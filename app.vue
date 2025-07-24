@@ -1,25 +1,10 @@
-
-
 <template>
-
-<Header/>
-<main class="flex-1 pt-[74px]">
-<Hero id="home"/>
-<How id="how"/>
-<App id="app"/>
-<Trust id="security"/>
-<Figures id="figures"/>
-<Testi id="testimonials"/>
-
-<QA id="faq"/>
-<Footer id ="footer" />
-</main>
-
+  <div>
+    <Header />
+    <!-- Add padding-top equal to header height -->
+    <main class="md:pt-[90px] pt-[80px]"> 
+      <NuxtPage />
+    </main>
+    <Footer />
+  </div>
 </template>
-
-<script setup lang="ts">
-import { Trust } from '#components';
-import Header from './components/Header.vue';
-
-
-</script>

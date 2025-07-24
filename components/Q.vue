@@ -11,7 +11,7 @@
           /></span>
           
         </div>
-        <span class="text-[20px] leading-[27px] text-[#202654] font-medium">{{
+        <span class="text-[20px] leading-[27px] text-black font-medium">{{
           question
         }}</span>
         <span>

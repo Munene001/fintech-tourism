@@ -9,8 +9,8 @@
         with M-Pesa, Kenya’s most trusted mobile money system.
       </div>
     </div>
-    <div class=" flex md:flex-row flex-col">
-      <div class="flex flex-col gap-[20px] flex-1">
+    <div class=" flex md:flex-row flex-col  ">
+      <div class="flex flex-col gap-[20px] flex-1 ">
         <Secure
           IconName="streamline:device-database-encryption-1-remix"
           title="End-to-End Encryption"
@@ -37,11 +37,11 @@
           description="We only operate with banks and providers that are fully licensed and regulated by the Central Bank of Kenya (CBK), so your money stays protected under strict compliance standards."
         />
       </div>
-      <div class="flex-1">
+      <div class="flex-1 ">
         <img
-        src="/otp-left.png"
+        src="/samp-left.png"
         alt="phone"
-        class="flex max-h-[530px] max-w-[100%] object-scale-down box-border "
+        class="flex max-h-[530px] max-w-[100%] object-scale-down box-border mx-auto "
       />
 
       </div>
