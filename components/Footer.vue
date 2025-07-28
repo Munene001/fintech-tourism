@@ -3,7 +3,7 @@
 
         <div class="flex flex-col gap-[15px] md:flex-1">
         <div class="flex flex-row items-center gap-[10px] ">
-            <img src = "/frame.png" alt="logo" class="object-scale-down h-[50px] w-[50px]">
+            <img src = "/lg.jpeg" alt="logo" class="object-scale-down h-[50px] w-[50px]">
              <div class="text-[20px] font-semibold leading-[24px]">Mpay-wallet</div>
               
         </div>
@@ -26,8 +26,8 @@
         <div class="flex flex-col gap-[15px] md:flex-1">
             <div class="text-[20px] font-semibold leading-[24px]">Quick Links</div>
             <div class="flex flex-col items-start gap-[5px] text-[Sans serif]  text-[16px] leading-[26px] font-[300]">
-               <button class="md:hidden" @click="() => scrollTo('home1')">Home</button>
-               <button class="hidden md:block" @click="() => scrollTo('home')">Home</button>
+               
+               <button><a href="/">Home</a></button>
                <button @click="() => scrollTo('how')">How it works</button>
                <button @click="() => scrollTo('app')">App</button>
             </div>
@@ -36,9 +36,9 @@
         <div class="flex flex-col gap-[15px] md:flex-1">
             <div class="text-[20px] font-semibold leading-[24px]">Support</div>
             <div class="flex flex-col items-start gap-[5px] text-[Sans serif]  text-[16px] leading-[26px] font-[300]">
-               <button @click="() => scrollTo('faq')">FAQs</button>
-               <button @click="() => scrollTo('how')">How it works</button>
-               <button @click="() => scrollTo('contact')">Reach us</button>
+               <button><a href="/faq">Faqs</a></button>
+               <button><a href="/blog">Blog</a></button>
+               <button><a href="/contact">Reach Us</a></button>
             </div>
 
         </div>

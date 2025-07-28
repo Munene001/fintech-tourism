@@ -37,13 +37,13 @@
   <div class="md:hidden flex bg-[url('/Mtalii1.webp')] h-[90vh] bg-cover bg-no-repeat bg-left flex-col items-center justify-center  pb-[45%] relative text-center gap-[10%] " >
     <div class=" w-[40vw] h-[15vh]"><img src="/BP1.png" alt="" class="w-full h-full"/></div>
     <div class="absolute w-[5vw] h-[25vh] bottom-[5%] left-[3%]"><img src="/bp2.png" alt="" class="w-full h-full"/></div>
-    <div class="flex flex-col gap-[20px]">
+    <div class="flex flex-col gap-[40px]">
     <div class="text-white font-dos font-medium text-[28px] tracking-wider">
       CONVINIENT AFFORDABLE SAFE
     </div>
-    <div class="font-medium  text-white 
+    <div class="font-medium  text-white relative
     ">
-      <div class="font-tres text-[50px]">Travel</div>
+      <div class="font-tres text-[90px] leading-[25px] z-40 text-yellow-500">Travel</div>
       <div class="font-dos tracking-wider text-[50px] ">EXPERIENCE</div>
     </div>
     </div>

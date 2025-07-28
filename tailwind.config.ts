@@ -11,7 +11,8 @@ module.exports = {
     extend: {
       fontFamily:{
         uno: ['Uno', 'sans-serif'],      // For Bahnschrift
-        dos: ['Dos', 'sans-serif'],      // For BRODAY-Regular
+        dos: ['Dos', 'sans-serif'], 
+        tres: ['Tres', 'sans-serif']     // For BRODAY-Regular
         
 
       },

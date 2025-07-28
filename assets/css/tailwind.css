@@ -11,7 +11,7 @@
   }
   @font-face {
     font-family: 'Tres';
-    src: url('/Amsterdam Signature.ttf') format('truetype');
+    src: url('/naghita.woff2') format('woff2');
   }
 
 @tailwind base;

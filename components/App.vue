@@ -2,7 +2,7 @@
   <div class="flex md:flex-row flex-col bg-[#202654] items-center md:p-[10px] md:gap-[20px] py-[30px] px-[18px] gap-[40px] shadow-lg  shadow-spread rounded-lg ">
     <div class="flex-1">
       <img
-        src="/samp5.png"
+        src="/samp5.webp"
         alt="phone"
         class="flex max-h-[530px] max-w-[100%] object-scale-down box-border"
       />

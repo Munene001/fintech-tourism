@@ -39,7 +39,7 @@
       </div>
       <div class="flex-1 ">
         <img
-        src="/samp-left.png"
+        src="/samp-left.webp"
         alt="phone"
         class="flex max-h-[530px] max-w-[100%] object-scale-down box-border mx-auto "
       />

@@ -6,7 +6,7 @@
     <div
       class="h-[90px] z-50 flex-row md:flex hidden w-full bg-[#202654] fixed shadow-lg shadow-b shadow-spread"
     >
-      <div class="flex w-[25%] items-center justify-center"><img src="/mpay.png" alt="mpay"/></div>
+      <div class="flex w-[25%] items-center justify-start"><img src="/lg.jpeg" alt="mpay" class=" h-[90px] rounded-r-3xl"/></div>
       <div class="flex-1 px-[5px] flex items-center justify-around bg-transparent font-[]">
         <a
           href="/"
@@ -15,11 +15,11 @@
           HOME
         </a>
         <a
-          href="/howdy"
+          href ="/howdy"
           class="text-[13px] leading-[14px] font-semibold no-underline text-white hover:underline"
         >
           HOW IT WORKS
-        </a>
+      </a>
         <a
           href="/about"
           class="text-[13px] leading-[14px] font-semibold no-underline text-white hover:underline"
@@ -67,9 +67,9 @@
 
     <!-- Mobile Navigation -->
     <div
-      class="flex flex-row max-w-[768px] md:hidden h-[80px] fixed shadow-lg shadow-b shadow-spread z-50 justify-between items-center px-4 box-border bg-[#202654] w-full text-white font-[edgaramond]"
+      class="flex flex-row max-w-[768px] md:hidden h-[80px] fixed shadow-lg shadow-b shadow-spread z-50 justify-between items-center pr-4 box-border bg-[#202654] w-full text-white font-[edgaramond]"
     >
-      <div><img src="/mpay.png" /></div>
+      <div class="flex justify-start "><img src="/lg.jpeg" class="h-[80px] w-[120px] rounded-r-3xl"/></div>
       <button @click="togglePopup">
         <Icon name="material-symbols:menu" class="text-[28px] text-white" />
       </button>

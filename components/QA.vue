@@ -1,4 +1,5 @@
 <template>
+    
     <div class="px-[20px] py-[40px] flex flex-col gap-[20px]">
         <div class=" flex flex-row items-center font-light text-[20px] text-[Sans-serif]"><span><Icon name="ci:house-02"/></span><span><Icon name="lsicon:right-filled"/></span>Frequently asked questions</div>
         <div class = "flex flex-col md:grid md:grid-cols-2  gap-[20px] justify-center">

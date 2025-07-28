@@ -1,3 +1,4 @@
 <template>
+    <Trust/>
     <QA/>
 </template>
