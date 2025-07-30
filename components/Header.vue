@@ -27,17 +27,12 @@
           ABOUT
         </a>
         <a
-          href="/partner"
+          href="/security"
           class="text-[14px] leading-[14px] font-semibold no-underline text-white hover:underline"
         >
-          PARTNERS
+          SECURITY
         </a>
-        <a
-          href="/blog"
-          class="text-[14px] leading-[14px] font-semibold no-underline text-white hover:underline"
-        >
-          BLOG
-        </a>
+      
         <a
           href="/faq"
           class="text-[13px] leading-[14px] font-semibold no-underline text-white hover:underline"
@@ -106,10 +101,10 @@
           ABOUT US
         </a>
         <a
-          href="/blog"
+          href="/security"
           class="flex h-[55px] text-[18px] leading-[18px] font-semibold no-underline border-b border-gray-400 items-center justify-start hover:text-[chocolate]"
         >
-          BLOG
+          SECURITY
         </a>
         <a
           href="/faq"
@@ -139,7 +134,8 @@ export default {
     };
   },
   methods: {
-    togglePopup() {
+    togglePopup() { 
+      console.log('Toggle called! Current state:', this.isOpen);
       this.isOpen = !this.isOpen;
     },
   },

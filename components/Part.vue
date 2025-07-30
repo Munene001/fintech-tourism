@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-[#202654] md:w-[57%] md:h-[850px] text-white font-[Sans-serif]  md:pt-[30px] flex flex-col gap-[40px] md:gap-[30px] py-[20px] md:shadow-lg md:shadow-r md:shadow-spread md:rounded-r-xl"
+    class="bg-[#202654] md:w-[57%] md:h-[850px] text-white font-uno  md:pt-[30px] flex flex-col gap-[40px] md:gap-[30px] py-[20px] md:shadow-lg md:shadow-r md:shadow-spread md:rounded-r-xl"
   >
     <div class="flex  px-[13px] flex-col gap-[10px]">
       <div class="text-[23px] md:text-[30px] font-semibold">
@@ -58,7 +58,7 @@
                 <span><Icon name = "uiw:linkedin" style="font-size:25px;"/></span>
                 
             </div>
-            <NuxtLink to = "/faq" class="bg-[#202654] text-white p-[10px] rounded-md">GO TO FAQs</NuxtLink>
+            <button to = "/faq" class="bg-[#202654] text-white p-[10px] rounded-md">GO TO FAQs</button>
         </div>
         </div>
         

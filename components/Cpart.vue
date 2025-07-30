@@ -27,7 +27,7 @@ import { NuxtLink } from '#components';
                 <span><Icon name = "uiw:linkedin" style="font-size:25px;"/></span>
                 
             </div>
-            <NuxtLink to = "/faq" class="bg-[#202654] text-white p-[5px] rounded-md">GO TO FAQs</NuxtLink>
+            <button  class="bg-[#202654] text-white p-[5px] rounded-md">GO TO FAQs</button>
         </div>
         </div>
         

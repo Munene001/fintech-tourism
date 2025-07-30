@@ -4,7 +4,7 @@
 </script>
 
 <template>
-    <div  class="md:flex md:flex-row relative md:bg-[#0c80c6]">
+    <div  class="md:flex md:flex-row relative md:bg-[#0c80c6] font-uno">
         <Cpart/>
     <Part/>
     <div class=" hidden md:flex bg-[url('/w3.webp')] h-[378px] bg-cover bg-center flex-1 relative ">
