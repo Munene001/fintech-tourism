@@ -4,7 +4,7 @@
   <div>
     <!-- Desktop Navigation -->
     <div
-      class="h-[90px] z-50 flex-row md:flex hidden w-full bg-[#202654] fixed shadow-lg shadow-b shadow-spread"
+      class="h-[90px] z-50 flex-row md:flex hidden w-full bg-[#202654] fixed shadow-lg shadow-b shadow-spread font-uno"
     >
       <div class="flex w-[25%] items-center justify-start"><img src="/lg.jpeg" alt="mpay" class=" h-[65px] rounded-r-3xl"/></div>
       <div class="flex-1 px-[5px] flex items-center justify-around bg-transparent font-[]">

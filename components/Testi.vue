@@ -1,6 +1,6 @@
 <template>
-    <div class="bg-[#202654] py-[45px] px-[15px] flex flex-col gap-[30px] md:gap-[45px] shadow-lg  shadow-spread rounded-b-lg">
-    <div class="text-white font-[Sans-serif] flex flex-col gap-[5px]">
+    <div class="bg-[#202654] font-uno py-[45px] px-[15px] flex flex-col gap-[30px] md:gap-[45px] shadow-lg  shadow-spread rounded-b-lg">
+    <div class="text-white  flex flex-col gap-[5px]">
         <div class="text-[28px] font-semibold leading-[34px]">It’s the freedom to move without borders that drives Mpay Wallet.</div>
         <div class="hidden md:block">With every transaction on Mpay, we’re not just exchanging money — we’re connecting lives, moments, and opportunities.</div>
     </div>

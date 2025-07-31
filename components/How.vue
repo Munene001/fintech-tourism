@@ -3,7 +3,7 @@
     <div
     class="   w-[full] flex flex-col items-center py-[60px] gap-[30px] md:px-[20px] md:py-[70px] md:gap-[40px]" id="how"
   >
-    <div class="text-[36px] font-bold leading-[40px] text-[#202654] font-[Bodoni]">HOW IT WORKS</div>
+    <div class="text-[36px] font-bold leading-[40px] text-[#202654] font-uno">HOW IT WORKS</div>
     <div
       class="grid grid-flow-row gap-[30px] place-items-center md:grid-cols-3"
     >

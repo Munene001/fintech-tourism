@@ -1,30 +1,38 @@
 <template>
-  <div class="flex flex-row font-[Sans-serif] items-center gap-[10px]">
-    <div class="flex flex-col gap-[20px] border-b-2 border-gray-500">
-      <button
-        @click="toggleDiv"
-        class="flex items-center text-start gap-[10px] py-[20px]"
-      >
-        <div class="space-x-2">
-          <span
-            ><Icon :name="Iconname" style="font-size: 25px; color: #202654"
-          /></span>
-          
+  <div class="font-[Sans-serif] mb-4 transition-all duration-300 ease-in-out">
+    <div 
+      @click="toggleDiv"
+      class="flex items-center justify-between cursor-pointer p-4 rounded-lg hover:bg-gray-50 transition-colors"
+      :class="{ 'bg-gray-50': isVisible }"
+    >
+      <div class="flex items-center gap-4">
+        <div class="text-[#202654]">
+          <Icon :name="Iconname" class="text-2xl" />
         </div>
-        <span class="text-[20px] leading-[27px] text-black font-medium">{{
-          question
-        }}</span>
-        <span>
-          <Icon
-            name="mingcute:arrows-down-line"
-            style="font-size: 25px; color: #202654"
-          />
-        </span>
-      </button>
-      <div v-if="isVisible" class="pb-[20px] leading-[25px]">
-        {{ explanation }}
+        <div>
+          <span class="text-gray-500 mr-2">{{ numeral }}</span>
+          <span class="text-lg font-semibold text-gray-800">{{ question }}</span>
+        </div>
       </div>
+      <Icon 
+        :name="isVisible ? 'mingcute:arrows-up-line' : 'mingcute:arrows-down-line'" 
+        class="text-2xl text-[#202654] transition-transform duration-300"
+        :class="{ 'rotate-180': isVisible }"
+      />
     </div>
+
+    <transition
+      name="expand"
+      @enter="enter"
+      @after-enter="afterEnter"
+      @leave="leave"
+    >
+      <div v-if="isVisible" class="px-4 pb-4 ml-14">
+        <div class="text-gray-600 leading-relaxed border-l-2 border-[#202654] pl-4">
+          {{ explanation }}
+        </div>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -43,4 +51,38 @@ const isVisible = ref(false);
 const toggleDiv = () => {
   isVisible.value = !isVisible.value;
 };
+
+// Animation functions
+const enter = (el) => {
+  el.style.height = 'auto';
+  const height = getComputedStyle(el).height;
+  el.style.height = '0';
+  setTimeout(() => {
+    el.style.height = height;
+  });
+};
+
+const afterEnter = (el) => {
+  el.style.height = 'auto';
+};
+
+const leave = (el) => {
+  el.style.height = getComputedStyle(el).height;
+  setTimeout(() => {
+    el.style.height = '0';
+  });
+};
 </script>
+
+<style>
+.expand-enter-active,
+.expand-leave-active {
+  transition: height 0.3s ease;
+  overflow: hidden;
+}
+
+.expand-enter-from,
+.expand-leave-to {
+  height: 0;
+}
+</style>

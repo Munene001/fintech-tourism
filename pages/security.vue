@@ -30,13 +30,13 @@ import Scomp from "~/components/Scomp.vue";
         <div class="hidden md:block">
           <Icon
             name="game-icons:bolt-shield"
-            style="font-size: 150px; color: #202654"
+            style="font-size: 150px; color: white"
           />
         </div>
         <div class="md:hidden block">
           <Icon
             name="game-icons:bolt-shield"
-            style="font-size: 90px; color: #202654"
+            style="font-size: 90px; color: white"
           />
         </div>
       </div>
@@ -49,66 +49,74 @@ import Scomp from "~/components/Scomp.vue";
     </div>
     <div></div>
   </div>
-  <div class="px-[10px] mt-[25px] flex flex-col gap-[20px]">
-    <div class="text-[20px]  font-bold text-center text-gray-900 ">HOW WE PROTECT EVERY SHILLING</div>
-    <div class=" text-[18px] text-gray-700  leading-relaxed max-w-3xl ">
-      Your financial safety is paramount. We've built Mtalii Pay on a foundation
-      of multi-layered, cutting-edge security protocols designed to detect,
-      prevent, and protect against any unauthorized activity.
+  <div class="bg-stone-200 py-16 px-4">
+    <!-- Section: HOW WE PROTECT EVERY SHILLING -->
+    <div class="max-w-7xl mx-auto space-y-10">
+      <div class="text-center space-y-3">
+        <h2 class="text-3xl font-bold text-blue-900">HOW WE PROTECT EVERY SHILLING</h2>
+        <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+          Your financial safety is paramount. Mtalii Pay is built on multi-layered, bank-grade security protocols that detect, prevent, and protect against any unauthorized activity.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <Scomp
+          heading="Bank-Grade Encryption (AES-256)"
+          IconName="fluent:building-bank-toolbox-20-filled"
+          explanation="We protect your sensitive data—like payments and personal details—using AES-256, the same advanced encryption standard trusted by top banks globally."
+          explanation2="Your data stays protected behind bank-level encryption, always hidden from prying eyes."
+        />
+
+        <Scomp
+          heading="Multi-Factor Authentication (MFA) & OTP"
+          IconName="simple-icons:authentik"
+          explanation="To access your account or make critical changes, we send a one-time code (OTP) to your phone or email—adding another layer of security."
+          explanation2="Passwords alone aren't enough—we make sure it's really you every time."
+        />
+
+        <Scomp
+          heading="Proactive Fraud Detection & AI Monitoring"
+          IconName="streamline-ultimate:coding-apps-website-detect-virus-monitor-search-bold"
+          explanation="Our smart systems use AI to monitor behavior in real time and instantly flag suspicious activity."
+          explanation2="Real-time protection powered by AI—because fraud never sleeps."
+        />
+      </div>
     </div>
-    <div class="md:grid md:grid-cols-3 grid grid-row gap-[20px]">
-  <Scomp
-    heading="Bank-Grade Encryption (AES-256)"
-    IconName="fluent:building-bank-toolbox-20-filled"
-    explanation="We protect your sensitive data—like payments and personal details—using AES-256, the same advanced encryption standard trusted by top banks globally. It scrambles your data into unreadable code, ensuring only you and Mtalii Pay can ever make sense of it." 
-    explanation2="Your data stays protected behind bank-level encryption, always hidden from prying eyes."
-  />
-  
-  <Scomp
-    heading="Multi-Factor Authentication (MFA) & One-Time Passwords (OTP):"
-    IconName="simple-icons:authentik"
-    explanation="To access your account or make critical changes, you’ll need more than just a password. We send a unique one-time code (OTP) to your phone or email to verify your identity—adding another powerful layer of protection." 
-    explanation2="Passwords alone aren't enough—we make sure it's really you every time."
-  />
-  
-  <Scomp
-    heading="Proactive Fraud Detection & AI Monitoring:"
-    IconName="streamline-ultimate:coding-apps-website-detect-virus-monitor-search-bold"
-    explanation="Our smart systems use AI to monitor your account behavior in real time. When anything suspicious or unusual is detected, it’s flagged instantly so our security team can respond before harm is done." 
-    explanation2="Real-time protection powered by AI—because fraud never sleeps."
-  />
-</div>
 
-  </div>
+    <!-- Divider -->
+    <div class="border-t border-blue-200 my-16"></div>
 
-  <div class="px-[10px] mt-[25px] flex flex-col gap-[20px]">
-    <div class="text-[20px]  font-bold text-center text-gray-900 ">PROTECTING YOU ON THE GO</div>
-    <div class="text-[18px] text-gray-700  leading-relaxed max-w-3xl ">
-      Mtalii Pay understands the unique security considerations of international
-      travel. Our app is equipped with smart features designed to protect your
-      funds and privacy, no matter where your Kenyan adventure takes you.
-    </div>
-    <div class="md:grid md:grid-cols-3 grid grid-row gap-[20px]">
-      <Scomp
-        heading="Lost/Stolen Phone Protection:"
-        IconName="hugeicons:phone-lock"
-        explanation="If your phone is lost or stolen, you can log into the Mtalii Pay web portal from another device to lock your wallet or sign out of all active sessions instantly. This stops anyone from accessing your funds or personal data."
-        explanation2="Even without your phone, your wallet stays in your hands."
-      />
+    <!-- Section: PROTECTING YOU ON THE GO -->
+    <div class="max-w-7xl mx-auto space-y-10">
+      <div class="text-center space-y-3">
+        <h2 class="text-3xl font-bold text-blue-900">PROTECTING YOU ON THE GO</h2>
+        <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+          Mtalii Pay understands the unique security considerations of international travel. Our app includes features designed to protect your funds and privacy—wherever you roam.
+        </p>
+      </div>
 
-      <Scomp
-        heading="Geo-Location Security Alerts (Optional):"
-        IconName="wpf:geo-fence"
-        explanation="Enable optional alerts to get notified when your account is accessed from unfamiliar locations. This helps you catch and act on suspicious activity not coming from your usual devices or regions."
-        explanation2="Security that adapts to your journey—always alert, never in your way."
-      />
+      <div class="grid md:grid-cols-3 gap-8">
+        <Scomp
+          heading="Lost/Stolen Phone Protection"
+          IconName="hugeicons:phone-lock"
+          explanation="Log into Mtalii Pay from another device to lock your wallet or sign out of all active sessions instantly."
+          explanation2="Even without your phone, your wallet stays in your hands."
+        />
 
-      <Scomp
-        heading="In-App Reporting & Emergency Lock:"
-        IconName="streamline:emergency-exit-solid"
-        explanation="Report suspicious activity and lock your wallet instantly through the app or by contacting our 24/7 support. This gives you the power to stop threats before they do any damage."
-        explanation2="Quick decisions, fast protection—your safety is our priority."
-      />
+        <Scomp
+          heading="Geo-Location Security Alerts (Optional)"
+          IconName="wpf:geo-fence"
+          explanation="Get notified when your account is accessed from unfamiliar locations."
+          explanation2="Security that adapts to your journey—always alert, never in your way."
+        />
+
+        <Scomp
+          heading="In-App Reporting & Emergency Lock"
+          IconName="streamline:emergency-exit-solid"
+          explanation="Report suspicious activity and lock your wallet instantly via the app or our 24/7 support."
+          explanation2="Quick decisions, fast protection—your safety is our priority."
+        />
+      </div>
     </div>
   </div>
   <Stier/>

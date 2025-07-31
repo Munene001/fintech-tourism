@@ -7,7 +7,7 @@
         class="flex max-h-[530px] max-w-[100%] object-scale-down box-border"
       />
     </div>
-    <div class="flex-1 md:flex md:flex-col md:gap-[20px] text-white font-[Sans-serif] block space-y-4 self-center">
+    <div class="flex-1 md:flex md:flex-col md:gap-[20px] text-white font-uno block space-y-4 self-center">
       <div>
         <div class="font-semibold leading-[42px] text-[35px] mb-[5px]">
           Send Money Directly In 47 Counties in Kenya and Across Major Hubs In
