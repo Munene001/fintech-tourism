@@ -10,11 +10,9 @@ import Scomp from "~/components/Scomp.vue";
     <div class="flex flex-row justify-between">
       <div aria-hidden="true"></div>
 
-      <button
-        class="bg-transparent font-uno text-white border-2 md:font-bold border-white p-[10px]"
-      >
-        Contact us
-      </button>
+     
+       <a href="/contact"  class="bg-transparent font-uno text-white border-2 md:font-bold border-white p-[10px]"> Contact us</a>
+      
     </div>
     <div class="flex flex-col md:gap-[20px] gap-[40px] mb-[10vh]">
       <div
@@ -30,7 +28,7 @@ import Scomp from "~/components/Scomp.vue";
         <div class="hidden md:block">
           <Icon
             name="game-icons:bolt-shield"
-            style="font-size: 150px; color: white"
+            style="font-size: 150px; color: #CA8A04"
           />
         </div>
         <div class="md:hidden block">
@@ -49,7 +47,7 @@ import Scomp from "~/components/Scomp.vue";
     </div>
     <div></div>
   </div>
-  <div class="bg-stone-200 py-16 px-4">
+  <div class="bg-stone-100 py-16 px-4">
     <!-- Section: HOW WE PROTECT EVERY SHILLING -->
     <div class="max-w-7xl mx-auto space-y-10">
       <div class="text-center space-y-3">

@@ -58,7 +58,7 @@
                 <span><Icon name = "uiw:linkedin" style="font-size:25px;"/></span>
                 
             </div>
-            <button to = "/faq" class="bg-[#202654] text-white p-[10px] rounded-md">GO TO FAQs</button>
+            <a href="/faq" class="bg-[#202654] text-white p-[10px] rounded-md">GO TO FAQs</a>
         </div>
         </div>
         
